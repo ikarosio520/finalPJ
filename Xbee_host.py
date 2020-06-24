@@ -62,6 +62,6 @@ while 1:
         line = s.readline().decode()
         print(line)
         output.write(line)
-        mqttc.publish(topic, "matrix data: "+line)
+        mqttc.publish(topic, "ping data: "+line)
     
     
